@@ -1,12 +1,8 @@
 <template>
   <div class="home">
-    <div class="home__img">
-      <img
-        class="home__img__item"
-        src="./../assets/Image/background.jpg"
-        alt="img"
-      />
-    </div>
+    <!-- <div class="home__img"> -->
+    <img class="home__img" src="./../assets/Image/background.jpg" alt="img" />
+    <!-- </div> -->
     <div class="home__info">
       <h3>
         СТО «Лидер» быстро и профессионально выполняет ремонт и обслуживание
@@ -28,16 +24,25 @@
   font-family: "Syne Mono", monospace;
   margin: 0;
   padding: 0;
-  display: grid;
-  grid-template-columns: 60% 40%;
-  height: 600px;
-  max-width: 100%;
-  & .home__img img {
-    width: 100%;
-    height: calc(100% - 50px);
+  width: 100%;
+
+  @media screen and (min-width: 900px) {
+    display: flex;
   }
-  & .home__info {
-    padding: 10px;
+}
+.home__img {
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  @media screen and (min-width: 900px) {
+    width: 60%;
+  }
+}
+.home__info {
+  padding: 10px;
+  @media screen and (min-width: 900px) {
+    width: 40%;
   }
 }
 </style>
