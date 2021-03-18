@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.body {
+  box-shadow: 1px 1px 5px gray;
+  max-width: 100%;
+  display: flex;
+}
+
+.aside {
+  width: 200px;
+  box-shadow: 1px 1px 5px gray;
+  padding: 2px;
+}
+
+.content {
+  width: 100%;
+  padding: 20px 50px;
+}

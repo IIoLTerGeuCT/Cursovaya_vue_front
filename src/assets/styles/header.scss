@@ -1,0 +1,28 @@
+.header {
+  height: 50px;
+  max-width: 100%;
+  box-shadow: 1px 1px 5px gray;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+}
+
+.header__img {
+  margin-left: 40px;
+  height: 32px;
+  width: 32px;
+}
+
+.header__title {
+  margin-left: 5px;
+  padding: 10px;
+  color: #109cf1;
+}
+
+.header__auth {}
